@@ -10,8 +10,9 @@ namespace AlgorithmProgram
             int Input;
             do
             {
-                Console.WriteLine("\n1:For InsertionSort");
+                Console.WriteLine("\n1: For Insertion Sort");
                 Console.WriteLine("2: For Bubble Sort");
+                Console.WriteLine("3: For Anagram");
                 Console.WriteLine("0: For Exit Program");
                 Input = int.Parse(Console.ReadLine());
                 switch (Input)
@@ -22,6 +23,9 @@ namespace AlgorithmProgram
                         break;
                     case 2:
                         AlgorithmProblem.Bubblesort();
+                        break;
+                    case 3:
+                        AlgorithmProblem.Anagrams();
                         break;
                     case 0:
                         Console.WriteLine("Exit");
